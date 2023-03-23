@@ -1,0 +1,10 @@
+Validatiing Form Fields
+Define a JSON for errors in the state
+ 
+Validate the form fields and put the error message corresponding
+to each fields in the errors JSON
+
+Display the corresponding error message with each fields
+
+
+while we may use the same validation logic for both cases, the way we access and store the values may differ depending on whether we're validating a single input field or the entire form.

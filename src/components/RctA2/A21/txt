@@ -1,0 +1,83 @@
+As React is a library,it does not provide a built in routing
+Routing is enabled using the React Router
+library
+Installation
+ npm install react-router-dom
+
+ BrowserRouter
+  Keeps UI in sync with the URL
+  Is the parent component that is used to store the other components
+  Wrap the application in index.js with BrowserRouter
+
+Link
+  Used to create links to different routes and implement navigation around the application.
+
+  Works like HTML anchor tag without page reload.
+
+Route
+ Renders some UI when its path matches the current URL
+ Usually defined in the main component
+
+Redirect
+ Redirects to a new URL
+
+Switch 
+   Used to render only the first route that matches the location rather than rendering all matching routes
+
+Define the correct order of routes as switch will render the first route it matches
+     
+
+
+The advantage of using Link over anchor tag is that page will not be reloaded
+
+path : 
+   The path is a string that defines the URL pattern to match. For example, /home, /about, /products/:id, where :id is a parameter that can be passed in the URL.
+render :
+   This can be useful for conditionally rendering different components based on certain logic.
+component :
+  The component is the React component that should be rendered when the URL matches the specified path. 
+
+
+
+
+  a string that allows you to embed expressions or variables within backtick (` `) characters. The expressions or variables are enclosed within ${ } and evaluated as part of the string.
+
+
+In React, programmatic navigation is typically achieved using the React Router library, which manages the mapping between URLs and components in the application. To perform programmatic navigation, developers can use the history object provided by React Router to navigate to a specific URL or route programmatically.
+
+Query parameters are a way to pass information between different pages or components in a web application through the URL. Query parameters are appended to the end of a URL, typically following a question mark (`?`), and consist of one or more key-value pairs separated by an ampersand (`&`).
+
+
+query strings can be used to pass data between different components and pages in a web application. This is particularly useful for creating dynamic pages where the content is dependent on user input or other factors.
+
+The advantages of using query strings in React include:
+
+Flexibility: Query strings can be used to pass any type of data between components and pages, including simple strings, numbers, and more complex data structures.
+
+URL readability: Query strings are easy to read and understand, making it easy to see what data is being passed between different components and pages.
+
+
+The "?" character is used to separate the base URL from the query parameters. Everything that follows the "?" in a URL is considered to be a set of query parameters.
+
+The "&" character is used to separate multiple query parameters within the same URL. Each query parameter consists of a key-value pair, separated by the "=" character. For example, in the URL "https://www.example.com/search?q=react&lang=en", the query parameters are "q=react" and "lang=en", separated by the "&" character.
+
+In React, the "key" prop is used to help the virtual DOM track which elements have changed, been added, or been removed from a list of items. When a list is rendered without unique key props, React may not be able to track changes properly, which can result in unexpected behavior and performance issues.
+
+To remove this warning, each item in the list should be given a unique "key" prop. The key prop should be a string or a number that uniquely identifies each item in the list.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The "Warning: A component is changing an uncontrolled input to be controlled" warning in React occurs when you have an input element (such as an input field, checkbox, or select) that does not have a "value" prop set, but then its value is being set by React. This can happen when the component is initially rendered with a default value or no value, but then the value is updated by state or props.
+
+To remove this warning, you need to either remove the "value" prop or set it to a value that is controlled by React. A controlled input is one where its value is set by React and is also updated by React in response to user input. This is typically done by setting the "value" prop to a state variable, and updating the state variable in response to user input.

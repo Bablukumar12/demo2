@@ -1,0 +1,35 @@
+Props
+ pass infomation to a Component using props 
+
+ pass props to any component as we declare
+
+ attributes for any HTML tag
+ <ChildComp pops1 = "Hello" />
+ State is private to a component and can only be
+ accessed by it.
+
+ Props are passed by a parent to a child component
+ 
+ State can be modified,where as props are read
+ only
+ It is an approach where state is shared between different
+ components.
+ 
+ The common approach is to move the state to the common parent
+ of the two components.
+
+ The state is shared via props to the child components.
+
+ With shared state,changes in state reflect in relevent 
+ component simultaneously.
+
+ There is a single source of truth for shared state component
+
+ In React, a single source of truth refers to the concept 
+that there should be one central place in your application
+where you store the data and state of your application, 
+and that this data should be the source of truth for all 
+components that need to access and display it. This helps
+to ensure that all components have access to the same,
+up-to-date information, and that changes made in one place
+are reflected consistently throughout the application

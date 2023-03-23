@@ -1,0 +1,110 @@
+componentDidMount(): This method is called immediately after the 
+component is mounted on the DOM and is used for fetching data from 
+APIs 
+
+componentDidUpdate(): This method is called after the component is 
+re-rendered and is used for updating the DOM or fetching new data from
+APIs.
+
+componentWillUnmount(): This method is called just before the component
+is removed from the DOM 
+
+
+a. componentDidMount is called immediately after a component is mounted 
+(i.e., inserted into the DOM). This method is commonly used to perform 
+actions that require the component to be mounted, such as fetching data
+ from an API or initializing a third-party library.
+
+b. componentDidUpdate is called immediately after a component has been 
+updated (i.e., after new props or state have been received). This method 
+is commonly used to perform actions that depend on the updated props or
+state, such as fetching new data from an API or updating the DOM.
+
+c. componentWillUnmount is called immediately before a component is 
+unmounted (i.e., removed from the DOM). This method is commonly used to 
+perform cleanup actions, such as removing event listeners or canceling 
+timers.
+
+d. shouldComponentUpdate is called before a component is re-rendered due 
+to changes in props or state. This method should return a boolean value 
+that indicates whether the component should re-render or not. By default,
+React re-renders a component whenever its props or state change, but 
+shouldComponentUpdate provides a way to optimize performance by 
+preventing unnecessary re-renders.
+
+
+
+
+
+
+
+prevProps: This parameter holds the previous props of the component
+before the update.
+
+prevState: This parameter holds the previous state of the component
+before the update.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+it's important to use comparison in componentDidUpdate to avoid an 
+infinite loop of updates and to optimize the performance of the 
+application.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+shouldComponentUpdate is a lifecycle method in React that is called 
+before the component is re-rendered. The purpose of this method is to 
+determine whether the component should re-render or not. By default,
+ React will re-render a component whenever its props or state changes.
+
+
+
+ Fetching data from an API: componentDidMount can be used to fetch data from an API and update the component's state with the retrieved data.
+
+
+ componentDidUpdate can be used to fetch data from an API when the component's props or state have changed and update the component's state with the retrieved data.
+
+
+ One common use case for using setState inside componentDidUpdate is to update the state of the component based on changes in its props. 

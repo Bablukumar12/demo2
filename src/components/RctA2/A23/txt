@@ -1,0 +1,70 @@
+The front-end is the part of the application that the user interacts with directly. It includes the user interface, such as the visual design and layout, as well as any functionality that the user interacts with directly.
+
+The back-end, on the other hand, refers to the part of the application that runs behind the scenes and is responsible for handling tasks that are not visible to the user. This includes things like data storage, processing, and security, as well as the communication between different parts of the system.
+
+
+
+In the context of web development, a request refers to an HTTP request that a client (such as a web browser) sends to a server. The request typically includes information about what the client is asking for, such as a specific resource or action, and may also include additional information such as authentication credentials.
+
+A response, on the other hand, refers to the HTTP response that the server sends back to the client in response to the request. The response typically includes the requested resource or action, as well as any additional information that the client needs to know about the response (such as a status code indicating whether the request was successful or not).
+
+
+An API is a set of rules and tools that developers use to create software applications. It specifies how different software components should interact with each other and can provide a way for developers to access certain functions or services from another application or system. APIs can be public or private and can be synchronous or asynchronous.
+
+
+React is a lightweight library for building UI
+Doesn't have a HTTP library build into it
+Many libraries available to use
+  Fetch
+  jQeury AJAX
+  Axios
+
+Rest APIs
+Get : request data from the server for the specified resource
+
+Post: sends data to the server to create a resource
+
+Put : used to update a resource
+
+Delete : used to delete a resource
+
+GET is an HTTP method used to retrieve data from a server. When a client sends a GET request to a server, it asks the server to return a representation of a resource, such as a web page, a document, or a file, identified by a specific URI (Uniform Resource Identifier).
+
+POST is an HTTP method used to submit data to a server for processing. When a client sends a POST request to a server, it includes a set of data in the request body that the server can use to create, update, or delete a resource on the server.
+
+Postman is a popular API testing tool used by developers and software testers to simplify the process of testing, documenting, and debugging APIs. It provides an intuitive graphical user interface that allows users to create, send, and monitor HTTP requests and responses. Postman supports a variety of request methods, including GET, POST, PUT, DELETE, and more.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Right-click anywhere on the page and select "Inspect" .
+
+Click on the "Network" tab in the Developer Tools window.
+
+Refresh the page 
+
+You should see a list of network requests made by the website in the "Network" tab. You can click on each request to view more details, such as the request and response headers, parameters, and timings.
+
+
+componentDidMount() is a lifecycle method in React that is called once, immediately after a component is mounted (i.e., inserted into the DOM tree). It is commonly used for initializing state, fetching data from an API, setting up event listeners, or any other side effect that needs to be performed once when the component is first rendered.
+
+
+componentDidUpdate() is a lifecycle method in React that is called immediately after a component updates (i.e., when its state or props change). It is commonly used for performing additional updates or side effects based on the updated state or props.
